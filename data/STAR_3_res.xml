@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results>
+	<delays>
+		<flow name="AFDX Flow 1">
+			<target name="B" value="270.7" />
+			<target name="C" value="270.7" />
+		</flow>
+		<flow name="AFDX Flow 2">
+			<target name="A" value="270.7" />
+			<target name="C" value="270.7" />
+		</flow>
+		<flow name="AFDX Flow 3">
+			<target name="A" value="270.7" />
+			<target name="B" value="270.7" />
+		</flow>
+	</delays>
+	<load>
+		<edge name="A => AFDX Switch 1">
+			<usage type="direct" percent="17.1%" value="17072000.00" payload="17072" />
+			<usage type="reverse" percent="17.1%" value="17072000.00" payload="17072" />
+		</edge>
+		<edge name="B => AFDX Switch 1">
+			<usage type="direct" percent="17.1%" value="17072000.00" payload="17072" />
+			<usage type="reverse" percent="17.1%" value="17072000.00" payload="17072" />
+		</edge>
+		<edge name="C => AFDX Switch 1">
+			<usage type="direct" percent="17.1%" value="17072000.00" payload="17072" />
+			<usage type="reverse" percent="17.1%" value="17072000.00" payload="17072" />
+		</edge>
+	</load>
+</results>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results>
+	<delays>
+		<flow name="AFDX Flow 1">
+			<target name="AFDX Station 3" value="463.2" />
+		</flow>
+		<flow name="AFDX Flow 2">
+			<target name="AFDX Station 3" value="463.2" />
+		</flow>
+		<flow name="AFDX Flow 3">
+			<target name="AFDX Station 3" value="463.2" />
+			<target name="AFDX Station 6" value="470.5" />
+		</flow>
+		<flow name="AFDX Flow 4">
+			<target name="AFDX Station 6" value="463.2" />
+		</flow>
+		<flow name="AFDX Flow 5">
+			<target name="AFDX Station 6" value="463.2" />
+			<target name="AFDX Station 3" value="648.5" />
+		</flow>
+	</delays>
+	<load>
+		<edge name="AFDX Station 1 => AFDX Switch 1">
+			<usage type="direct" percent="8.5%" value="8536000.00" payload="8536" />
+			<usage type="reverse" percent="0.0%" value="0.00" payload="0" />
+		</edge>
+		<edge name="AFDX Station 2 => AFDX Switch 1">
+			<usage type="direct" percent="8.5%" value="8536000.00" payload="8536" />
+			<usage type="reverse" percent="0.0%" value="0.00" payload="0" />
+		</edge>
+		<edge name="AFDX Switch 1 => AFDX Station 3">
+			<usage type="direct" percent="34.1%" value="34144000.00" payload="34144" />
+			<usage type="reverse" percent="0.0%" value="0.00" payload="0" />
+		</edge>
+		<edge name="AFDX Station 4 => AFDX Switch 1">
+			<usage type="direct" percent="0.0%" value="0.00" payload="0" />
+			<usage type="reverse" percent="25.6%" value="25608000.00" payload="25608" />
+		</edge>
+		<edge name="AFDX Switch 1 => AFDX Switch 2">
+			<usage type="direct" percent="8.5%" value="8536000.00" payload="8536" />
+			<usage type="reverse" percent="8.5%" value="8536000.00" payload="8536" />
+		</edge>
+		<edge name="AFDX Switch 2 => AFDX Station 5">
+			<usage type="direct" percent="0.0%" value="0.00" payload="0" />
+			<usage type="reverse" percent="25.6%" value="25608000.00" payload="25608" />
+		</edge>
+	</load>
+</results>

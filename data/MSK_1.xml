@@ -1,0 +1,1767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<open_timaeus_net>
+   <projectInformation area="Net" extension="tmne" meta="False" mode="Ethernet" name="3ESE" package="tim.mm.net" zoom="1.000000">
+      <imported>C:\Users\MohsinKhan\Timaeus\areas\net.tmm</imported>
+   </projectInformation>
+   <elements>
+      <element BuiltIn="false" id="0" name="NetRoot#0" temp="false" type="NetRoot">
+         <value name="ATS" value="true"/>
+         <value name="CBS" value="true"/>
+         <value name="CBS Homogeneous slopes" value="true"/>
+         <value name="CQF" value="true"/>
+         <value name="Clock Stability" value="0.0"/>
+         <value name="FRER" value="true"/>
+         <value name="MAC Overhead" value="47"/>
+         <value name="MaxPayloadSize" value="1471"/>
+         <value name="MinPayloadSize" value="84"/>
+         <value name="Organization Policy" value="Basic"/>
+         <value name="PHY Overhead" value="20"/>
+         <value name="Protocol Overhead" value="0"/>
+         <value name="Rendering mode" value="Image"/>
+         <value name="Shortest Path" value="Dijkstra"/>
+         <value name="Standard Classes" value="false"/>
+         <value name="Synchronization" value="true"/>
+         <value name="Synchronous Error" value="0.0"/>
+         <value name="TAS" value="true"/>
+         <value name="TSN schema" value="SP(8)"/>
+         <value name="TSN schema CRC" value="0"/>
+         <value name="Timing Jitter" value="0.0"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="YangDate" value="0"/>
+         <value name="YangPath" value=""/>
+         <value name="models" value=""/>
+         <value name="optimResult" value="0.0"/>
+         <value name="subnets" value="[]"/>
+         <reference name="FavoriteProfile" value="11"/>
+         <reference name="Protocol" value="-1"/>
+         <reference containment="True" name="YangModel" value="-1"/>
+         <reference containment="True" name="_notes" value="[]"/>
+         <reference containment="True" name="calculusProfiles" value="[10, 11, 12]"/>
+         <reference containment="True" name="classes" value="[2, 3, 4, 5, 6, 7, 8, 9]"/>
+         <reference containment="True" name="constraints" value="[]"/>
+         <reference containment="True" name="cycles" value="[]"/>
+         <reference containment="True" name="edges" value="[18, 19, 20, 21, 61, 64]"/>
+         <reference containment="True" name="flows" value="[22, 24, 26, 70]"/>
+         <reference containment="True" name="focuses" value="[]"/>
+         <reference containment="True" name="nodes" value="[13, 14, 15, 16, 17, 54, 60]"/>
+         <reference containment="True" name="nodesSets" value="[]"/>
+         <reference containment="True" name="parts" value="[]"/>
+         <reference containment="True" name="portModel" value="1"/>
+         <reference containment="True" name="protocols" value="[44, 45, 46, 47, 48, 49, 50, 51, 52]"/>
+         <reference containment="True" name="results" value="[2147483639]"/>
+         <reference containment="True" name="serviceClassRules" value="[]"/>
+         <reference containment="True" name="synchroDomains" value="[]"/>
+         <reference name="tables" value="[]"/>
+         <reference containment="True" name="testScenarios" value="[]"/>
+         <reference containment="True" name="trafficSpecs" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="portModel" id="1" name="PortModel#0" parent="0" temp="false" type="PortModel">
+         <value name="digits" value="2"/>
+         <value name="prefix" value="#"/>
+         <value name="start" value="0"/>
+         <value name="suffix" value=""/>
+         <value name="useDestinationName" value="false"/>
+         <value name="useNodeName" value="false"/>
+      </element>
+      <element BuiltIn="false" container="classes" id="2" name="Network" parent="0" temp="false" type="ServiceClass">
+         <value name="ATS" value="false"/>
+         <value name="CBS" value="false"/>
+         <value name="CQF" value="false"/>
+         <value name="Color" value="RGB {255, 105, 100}"/>
+         <value name="Description" value="Network control"/>
+         <value name="FRER" value="true"/>
+         <value name="Name" value="Network"/>
+         <value name="Priority" value="7"/>
+         <value name="Queue mapping" value="3"/>
+         <value name="SP" value="false"/>
+         <value name="TAS" value="false"/>
+         <value name="firstOnly" value="false"/>
+         <value name="idSL" value="10.0"/>
+         <value name="preemptive" value="false"/>
+         <value name="sdSL" value="90.0"/>
+         <value name="synchronization" value="false"/>
+      </element>
+      <element BuiltIn="false" container="classes" id="3" name="Voice" parent="0" temp="false" type="ServiceClass">
+         <value name="ATS" value="false"/>
+         <value name="CBS" value="false"/>
+         <value name="CQF" value="false"/>
+         <value name="Color" value="RGB {225, 125, 100}"/>
+         <value name="Description" value="Voice  (&lt;10 ms latency)"/>
+         <value name="FRER" value="true"/>
+         <value name="Name" value="Voice"/>
+         <value name="Priority" value="6"/>
+         <value name="Queue mapping" value="3"/>
+         <value name="SP" value="false"/>
+         <value name="TAS" value="false"/>
+         <value name="firstOnly" value="false"/>
+         <value name="idSL" value="10.0"/>
+         <value name="preemptive" value="false"/>
+         <value name="sdSL" value="90.0"/>
+         <value name="synchronization" value="false"/>
+      </element>
+      <element BuiltIn="false" container="classes" id="4" name="Video" parent="0" temp="false" type="ServiceClass">
+         <value name="ATS" value="false"/>
+         <value name="CBS" value="false"/>
+         <value name="CQF" value="false"/>
+         <value name="Color" value="RGB {195, 145, 100}"/>
+         <value name="Description" value="Video (&lt;100 ms latency)"/>
+         <value name="FRER" value="true"/>
+         <value name="Name" value="Video"/>
+         <value name="Priority" value="5"/>
+         <value name="Queue mapping" value="2"/>
+         <value name="SP" value="false"/>
+         <value name="TAS" value="false"/>
+         <value name="firstOnly" value="false"/>
+         <value name="idSL" value="10.0"/>
+         <value name="preemptive" value="false"/>
+         <value name="sdSL" value="90.0"/>
+         <value name="synchronization" value="false"/>
+      </element>
+      <element BuiltIn="false" container="classes" id="5" name="Load" parent="0" temp="false" type="ServiceClass">
+         <value name="ATS" value="false"/>
+         <value name="CBS" value="false"/>
+         <value name="CQF" value="false"/>
+         <value name="Color" value="RGB {165, 165, 100}"/>
+         <value name="Description" value="Controlled Load"/>
+         <value name="FRER" value="true"/>
+         <value name="Name" value="Load"/>
+         <value name="Priority" value="4"/>
+         <value name="Queue mapping" value="2"/>
+         <value name="SP" value="false"/>
+         <value name="TAS" value="false"/>
+         <value name="firstOnly" value="false"/>
+         <value name="idSL" value="10.0"/>
+         <value name="preemptive" value="false"/>
+         <value name="sdSL" value="90.0"/>
+         <value name="synchronization" value="false"/>
+      </element>
+      <element BuiltIn="false" container="classes" id="6" name="Effort" parent="0" temp="false" type="ServiceClass">
+         <value name="ATS" value="false"/>
+         <value name="CBS" value="false"/>
+         <value name="CQF" value="false"/>
+         <value name="Color" value="RGB {135, 185, 100}"/>
+         <value name="Description" value="Excellent Effort"/>
+         <value name="FRER" value="true"/>
+         <value name="Name" value="Effort"/>
+         <value name="Priority" value="3"/>
+         <value name="Queue mapping" value="1"/>
+         <value name="SP" value="false"/>
+         <value name="TAS" value="false"/>
+         <value name="firstOnly" value="false"/>
+         <value name="idSL" value="10.0"/>
+         <value name="preemptive" value="false"/>
+         <value name="sdSL" value="90.0"/>
+         <value name="synchronization" value="false"/>
+      </element>
+      <element BuiltIn="false" container="classes" id="7" name="Spare" parent="0" temp="false" type="ServiceClass">
+         <value name="ATS" value="false"/>
+         <value name="CBS" value="false"/>
+         <value name="CQF" value="false"/>
+         <value name="Color" value="RGB {105, 205, 100}"/>
+         <value name="Description" value="Spare"/>
+         <value name="FRER" value="true"/>
+         <value name="Name" value="Spare"/>
+         <value name="Priority" value="2"/>
+         <value name="Queue mapping" value="1"/>
+         <value name="SP" value="false"/>
+         <value name="TAS" value="false"/>
+         <value name="firstOnly" value="false"/>
+         <value name="idSL" value="10.0"/>
+         <value name="preemptive" value="false"/>
+         <value name="sdSL" value="90.0"/>
+         <value name="synchronization" value="false"/>
+      </element>
+      <element BuiltIn="false" container="classes" id="8" name="Background" parent="0" temp="false" type="ServiceClass">
+         <value name="ATS" value="false"/>
+         <value name="CBS" value="false"/>
+         <value name="CQF" value="false"/>
+         <value name="Color" value="RGB {80, 225, 100}"/>
+         <value name="Description" value="Background"/>
+         <value name="FRER" value="true"/>
+         <value name="Name" value="Background"/>
+         <value name="Priority" value="1"/>
+         <value name="Queue mapping" value="0"/>
+         <value name="SP" value="false"/>
+         <value name="TAS" value="false"/>
+         <value name="firstOnly" value="false"/>
+         <value name="idSL" value="10.0"/>
+         <value name="preemptive" value="false"/>
+         <value name="sdSL" value="90.0"/>
+         <value name="synchronization" value="false"/>
+      </element>
+      <element BuiltIn="false" container="results" id="2147483639" name="Results##" parent="0" temp="true" tempTag="MAIN_RESULT" type="Results">
+         <value name="behavior" value="TMNModeBehavior"/>
+         <value name="duration" value="2.0"/>
+         <value name="nbEdges" value="6"/>
+         <value name="nbFlows" value="4"/>
+         <value name="nbIssueDelays" value="0"/>
+         <value name="nbIssueJitters" value="0"/>
+         <value name="nbIssueLoad" value="0"/>
+         <value name="nbIssueMemory" value="0"/>
+         <value name="nbSwitches" value="2"/>
+         <value name="nbTargets" value="4"/>
+         <value name="ok" value="true"/>
+         <value name="profil" value="Blocks wo line shaping"/>
+         <value name="useFixedPoint" value="false"/>
+         <reference containment="True" name="BacklogStat" value="2147483635"/>
+         <reference containment="True" name="DelayStat" value="2147483638"/>
+         <reference containment="True" name="JitterStat" value="2147483634"/>
+         <reference containment="True" name="LoadStat" value="2147483633"/>
+         <reference containment="True" name="MarginNegStat" value="2147483636"/>
+         <reference containment="True" name="MarginStat" value="2147483637"/>
+         <reference containment="True" name="backlogs" value="[2147483618, 2147483607, 2147483604, 2147483603]"/>
+         <reference containment="True" name="delays" value="[2147483617, 2147483614, 2147483611, 2147483606]"/>
+         <reference containment="True" name="delaysPerPort" value="[2147483620, 2147483619, 2147483615, 2147483612, 2147483609, 2147483608]"/>
+         <reference containment="True" name="jitters" value="[2147483616, 2147483613, 2147483610, 2147483605]"/>
+         <reference containment="True" name="loads" value="[2147483632, 2147483631, 2147483630, 2147483629, 2147483628, 2147483627, 2147483626, 2147483625, 2147483624, 2147483623, 2147483622, 2147483621]"/>
+      </element>
+      <element BuiltIn="false" container="classes" id="9" name="Best Effort" parent="0" temp="false" type="ServiceClass">
+         <value name="ATS" value="false"/>
+         <value name="CBS" value="false"/>
+         <value name="CQF" value="false"/>
+         <value name="Color" value="RGB {60, 255, 100}"/>
+         <value name="Description" value="Best Effort"/>
+         <value name="FRER" value="true"/>
+         <value name="Name" value="Best Effort"/>
+         <value name="Priority" value="0"/>
+         <value name="Queue mapping" value="0"/>
+         <value name="SP" value="false"/>
+         <value name="TAS" value="false"/>
+         <value name="firstOnly" value="false"/>
+         <value name="idSL" value="10.0"/>
+         <value name="preemptive" value="false"/>
+         <value name="sdSL" value="90.0"/>
+         <value name="synchronization" value="false"/>
+      </element>
+      <element BuiltIn="false" container="DelayStat" id="2147483638" name="Stat##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Stat">
+         <value name="avg" value="484.75"/>
+         <value name="count" value="4"/>
+         <value name="error" value="false"/>
+         <value name="max" value="553.0"/>
+         <value name="min" value="462.0"/>
+         <value name="stdDev" value="39.40415587219196"/>
+      </element>
+      <element BuiltIn="true" container="calculusProfiles" id="10" name="Blocks" parent="0" temp="false" type="Calculus Profile">
+         <value name="Description" value="Calculation profile based on blocks"/>
+         <value name="Name" value="Blocks"/>
+         <value name="behavior" value="TMNModeBehavior"/>
+         <value name="clockImpact" value="false"/>
+         <value name="externalBridges" value="false"/>
+         <value name="fault injection" value="false"/>
+         <value name="fixedPoint" value="false"/>
+         <value name="ignoreHeaderPacketizing" value="true"/>
+         <value name="lineShaping" value="true"/>
+         <value name="otherParameters" value="-ceilTimeResults"/>
+         <value name="pythonScript" value=""/>
+         <value name="synchronization" value="false"/>
+         <value name="usedForCombination" value="true"/>
+      </element>
+      <element BuiltIn="false" container="MarginStat" id="2147483637" name="Stat##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Stat">
+         <value name="avg" value="51.52500000000001"/>
+         <value name="count" value="4"/>
+         <value name="error" value="false"/>
+         <value name="max" value="53.80000000000001"/>
+         <value name="min" value="44.70000000000001"/>
+         <value name="stdDev" value="3.9404155872191406"/>
+      </element>
+      <element BuiltIn="true" container="calculusProfiles" id="11" name="Blocks wo line shaping" parent="0" temp="false" type="Calculus Profile">
+         <value name="Description" value="Calculation profile based on blocks without line shaping"/>
+         <value name="Name" value="Blocks wo line shaping"/>
+         <value name="behavior" value="TMNModeBehavior"/>
+         <value name="clockImpact" value="false"/>
+         <value name="externalBridges" value="false"/>
+         <value name="fault injection" value="false"/>
+         <value name="fixedPoint" value="false"/>
+         <value name="ignoreHeaderPacketizing" value="true"/>
+         <value name="lineShaping" value="false"/>
+         <value name="otherParameters" value="-ceilTimeResults"/>
+         <value name="pythonScript" value=""/>
+         <value name="synchronization" value="false"/>
+         <value name="usedForCombination" value="true"/>
+      </element>
+      <element BuiltIn="false" container="MarginNegStat" id="2147483636" name="Stat##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Stat">
+         <value name="max" value="0.0"/>
+         <value name="min" value="1.7976931348623157E308"/>
+      </element>
+      <element BuiltIn="true" container="calculusProfiles" id="12" name="Python script __base" parent="0" temp="false" type="Calculus Profile">
+         <value name="Description" value="Calculation profile based on an external python code"/>
+         <value name="Name" value="Python script __base"/>
+         <value name="behavior" value=""/>
+         <value name="clockImpact" value="false"/>
+         <value name="externalBridges" value="false"/>
+         <value name="fault injection" value="false"/>
+         <value name="fixedPoint" value="false"/>
+         <value name="ignoreHeaderPacketizing" value="false"/>
+         <value name="lineShaping" value="false"/>
+         <value name="otherParameters" value=""/>
+         <value name="pythonScript" value="__base.py"/>
+         <value name="synchronization" value="false"/>
+         <value name="usedForCombination" value="true"/>
+      </element>
+      <element BuiltIn="false" container="BacklogStat" id="2147483635" name="Stat##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Stat">
+         <value name="avg" value="2926.4375"/>
+         <value name="count" value="2"/>
+         <value name="error" value="false"/>
+         <value name="max" value="4708.75"/>
+         <value name="min" value="1144.125"/>
+         <value name="stdDev" value="1782.3125"/>
+      </element>
+      <element BuiltIn="false" container="nodes" id="13" name="AFDX Switch 1" parent="0" temp="false" type="Switch">
+         <value name="ATS" value="true"/>
+         <value name="CBS" value="true"/>
+         <value name="CQF" value="true"/>
+         <value name="Clock drift" value="10.0"/>
+         <value name="Clock drift min" value="10.0"/>
+         <value name="Clock granularity" value="10.0"/>
+         <value name="Clock jitter" value="2.0"/>
+         <value name="CustomImplementation" value=""/>
+         <value name="Elimination Policy" value="None"/>
+         <value name="FRER" value="true"/>
+         <value name="Global synchronous error (not used)" value="0.0"/>
+         <value name="Grand Master" value="false"/>
+         <value name="Grand Master weight" value="0"/>
+         <value name="Implementation family" value=""/>
+         <value name="Maximal Port Number" value="32"/>
+         <value name="Maximal synchronous error" value="Infinity"/>
+         <value name="Memory" value="65536"/>
+         <value name="Memory Management Policy" value="Shared memory"/>
+         <value name="Name" value="AFDX Switch 1"/>
+         <value name="Queues number per port" value="8"/>
+         <value name="Replication Node" value="false"/>
+         <value name="Service Policy" value="Fixed Priority"/>
+         <value name="Storage Policy" value="Cut Through"/>
+         <value name="Supports Preemption" value="false"/>
+         <value name="Synchronous error" value="0.0"/>
+         <value name="TAS" value="true"/>
+         <value name="Tech Latency Max" value="0.0"/>
+         <value name="Tech Latency Min" value="0.0"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="__custom4" value=""/>
+         <value name="__custom5" value=""/>
+         <value name="avoidInRooting" value="false"/>
+         <value name="cluster" value=""/>
+         <value name="cluster family" value="None"/>
+         <value name="family" value=""/>
+         <value name="i" value="0"/>
+         <value name="j" value="0"/>
+         <value name="macAddress" value="FF-FF-FF-FF-FF-FF"/>
+         <value name="model" value=""/>
+         <value name="monitoringOnly" value="false"/>
+         <value name="nameRendering" value="FULL"/>
+         <value name="nodeRendering" value=""/>
+         <value name="subnet" value=""/>
+         <value name="weight" value="1"/>
+         <reference name="Elimination Target" value="[]"/>
+         <reference name="part" value="-1"/>
+         <reference containment="True" name="ports" value="[28, 30, 32, 34, 56]"/>
+         <reference name="scheduler" value="-1"/>
+         <stereo actionSelected="True" behavior="STNetImage" hideLocation="False" level="20" pageFromMe="False" showWeight="False">
+            <location name="Main">
+               <x>272.000000</x>
+               <y>112.000000</y>
+               <w>32.000000</w>
+               <h>32.000000</h>
+               <theta>NaN</theta>
+               <unit factor="1.0" power="1" resolution="NaN" siUnit="NONE"/>
+            </location>
+         </stereo>
+      </element>
+      <element BuiltIn="false" container="JitterStat" id="2147483634" name="Stat##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Stat">
+         <value name="avg" value="294.75"/>
+         <value name="count" value="4"/>
+         <value name="error" value="false"/>
+         <value name="max" value="300.0"/>
+         <value name="min" value="293.0"/>
+         <value name="stdDev" value="3.031088913245535"/>
+      </element>
+      <element BuiltIn="false" container="nodes" id="14" name="AFDX Station 1" parent="0" temp="false" type="Station">
+         <value name="ATS" value="true"/>
+         <value name="CBS" value="true"/>
+         <value name="CQF" value="true"/>
+         <value name="Clock drift" value="10.0"/>
+         <value name="Clock drift min" value="10.0"/>
+         <value name="Clock granularity" value="10.0"/>
+         <value name="Clock jitter" value="2.0"/>
+         <value name="CustomImplementation" value=""/>
+         <value name="Elimination Policy" value="None"/>
+         <value name="FRER" value="true"/>
+         <value name="Global synchronous error (not used)" value="0.0"/>
+         <value name="Grand Master" value="false"/>
+         <value name="Grand Master weight" value="0"/>
+         <value name="Maximal Port Number" value="1"/>
+         <value name="Maximal synchronous error" value="Infinity"/>
+         <value name="Name" value="AFDX Station 1"/>
+         <value name="Replication Node" value="false"/>
+         <value name="Service Policy" value="Fixed Priority"/>
+         <value name="Supports Preemption" value="false"/>
+         <value name="Synchronous error" value="0.0"/>
+         <value name="TAS" value="true"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="__custom4" value=""/>
+         <value name="__custom5" value=""/>
+         <value name="avoidInRooting" value="false"/>
+         <value name="cluster" value=""/>
+         <value name="cluster family" value="None"/>
+         <value name="family" value=""/>
+         <value name="i" value="0"/>
+         <value name="j" value="0"/>
+         <value name="macAddress" value="FF-FF-FF-FF-FF-FF"/>
+         <value name="model" value=""/>
+         <value name="monitoringOnly" value="false"/>
+         <value name="nameRendering" value="FULL"/>
+         <value name="nodeRendering" value=""/>
+         <value name="subnet" value=""/>
+         <value name="weight" value="1"/>
+         <reference name="Elimination Target" value="[]"/>
+         <reference name="part" value="-1"/>
+         <reference containment="True" name="ports" value="[36]"/>
+         <reference name="scheduler" value="-1"/>
+         <stereo actionSelected="True" behavior="STNetImage" hideLocation="False" level="10" pageFromMe="False" showWeight="False">
+            <location name="Main">
+               <x>142.000000</x>
+               <y>47.000000</y>
+               <w>32.000000</w>
+               <h>32.000000</h>
+               <theta>NaN</theta>
+               <unit factor="1.0" power="1" resolution="NaN" siUnit="NONE"/>
+            </location>
+         </stereo>
+      </element>
+      <element BuiltIn="false" container="LoadStat" id="2147483633" name="Stat##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Stat">
+         <value name="avg" value="13.333333333333334"/>
+         <value name="count" value="6"/>
+         <value name="error" value="false"/>
+         <value name="max" value="35.0"/>
+         <value name="min" value="0.0"/>
+         <value name="stdDev" value="9.689627902499089"/>
+      </element>
+      <element BuiltIn="false" container="nodes" id="15" name="AFDX Station 2" parent="0" temp="false" type="Station">
+         <value name="ATS" value="true"/>
+         <value name="CBS" value="true"/>
+         <value name="CQF" value="true"/>
+         <value name="Clock drift" value="10.0"/>
+         <value name="Clock drift min" value="10.0"/>
+         <value name="Clock granularity" value="10.0"/>
+         <value name="Clock jitter" value="2.0"/>
+         <value name="CustomImplementation" value=""/>
+         <value name="Elimination Policy" value="None"/>
+         <value name="FRER" value="true"/>
+         <value name="Global synchronous error (not used)" value="0.0"/>
+         <value name="Grand Master" value="false"/>
+         <value name="Grand Master weight" value="0"/>
+         <value name="Maximal Port Number" value="1"/>
+         <value name="Maximal synchronous error" value="Infinity"/>
+         <value name="Name" value="AFDX Station 2"/>
+         <value name="Replication Node" value="false"/>
+         <value name="Service Policy" value="Fixed Priority"/>
+         <value name="Supports Preemption" value="false"/>
+         <value name="Synchronous error" value="0.0"/>
+         <value name="TAS" value="true"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="__custom4" value=""/>
+         <value name="__custom5" value=""/>
+         <value name="avoidInRooting" value="false"/>
+         <value name="cluster" value=""/>
+         <value name="cluster family" value="None"/>
+         <value name="family" value=""/>
+         <value name="i" value="0"/>
+         <value name="j" value="0"/>
+         <value name="macAddress" value="FF-FF-FF-FF-FF-FF"/>
+         <value name="model" value=""/>
+         <value name="monitoringOnly" value="false"/>
+         <value name="nameRendering" value="FULL"/>
+         <value name="nodeRendering" value=""/>
+         <value name="subnet" value=""/>
+         <value name="weight" value="1"/>
+         <reference name="Elimination Target" value="[]"/>
+         <reference name="part" value="-1"/>
+         <reference containment="True" name="ports" value="[38]"/>
+         <reference name="scheduler" value="-1"/>
+         <stereo actionSelected="True" behavior="STNetImage" hideLocation="False" level="10" pageFromMe="False" showWeight="False">
+            <location name="Main">
+               <x>88.000000</x>
+               <y>140.000000</y>
+               <w>32.000000</w>
+               <h>32.000000</h>
+               <theta>NaN</theta>
+               <unit factor="1.0" power="1" resolution="NaN" siUnit="NONE"/>
+            </location>
+         </stereo>
+      </element>
+      <element BuiltIn="false" container="loads" id="2147483632" name="Load##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Load">
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="error" value="false"/>
+         <value name="load" value="9.0"/>
+         <value name="sense" value="Direct"/>
+         <value name="usage" value="8536.0"/>
+         <reference name="edge" value="18"/>
+      </element>
+      <element BuiltIn="false" container="nodes" id="16" name="AFDX Station 3" parent="0" temp="false" type="Station">
+         <value name="ATS" value="true"/>
+         <value name="CBS" value="true"/>
+         <value name="CQF" value="true"/>
+         <value name="Clock drift" value="10.0"/>
+         <value name="Clock drift min" value="10.0"/>
+         <value name="Clock granularity" value="10.0"/>
+         <value name="Clock jitter" value="2.0"/>
+         <value name="CustomImplementation" value=""/>
+         <value name="Elimination Policy" value="None"/>
+         <value name="FRER" value="true"/>
+         <value name="Global synchronous error (not used)" value="0.0"/>
+         <value name="Grand Master" value="false"/>
+         <value name="Grand Master weight" value="0"/>
+         <value name="Maximal Port Number" value="1"/>
+         <value name="Maximal synchronous error" value="Infinity"/>
+         <value name="Name" value="AFDX Station 3"/>
+         <value name="Replication Node" value="false"/>
+         <value name="Service Policy" value="Fixed Priority"/>
+         <value name="Supports Preemption" value="false"/>
+         <value name="Synchronous error" value="0.0"/>
+         <value name="TAS" value="true"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="__custom4" value=""/>
+         <value name="__custom5" value=""/>
+         <value name="avoidInRooting" value="false"/>
+         <value name="cluster" value=""/>
+         <value name="cluster family" value="None"/>
+         <value name="family" value=""/>
+         <value name="i" value="0"/>
+         <value name="j" value="0"/>
+         <value name="macAddress" value="FF-FF-FF-FF-FF-FF"/>
+         <value name="model" value=""/>
+         <value name="monitoringOnly" value="false"/>
+         <value name="nameRendering" value="FULL"/>
+         <value name="nodeRendering" value=""/>
+         <value name="subnet" value=""/>
+         <value name="weight" value="1"/>
+         <reference name="Elimination Target" value="[]"/>
+         <reference name="part" value="-1"/>
+         <reference containment="True" name="ports" value="[40]"/>
+         <reference name="scheduler" value="-1"/>
+         <stereo actionSelected="True" behavior="STNetImage" hideLocation="False" level="10" pageFromMe="False" showWeight="False">
+            <location name="Main">
+               <x>272.000000</x>
+               <y>370.000000</y>
+               <w>32.000000</w>
+               <h>32.000000</h>
+               <theta>NaN</theta>
+               <unit factor="1.0" power="1" resolution="NaN" siUnit="NONE"/>
+            </location>
+         </stereo>
+      </element>
+      <element BuiltIn="false" container="loads" id="2147483631" name="Load##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Load">
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="error" value="false"/>
+         <value name="load" value="0.0"/>
+         <value name="sense" value="Reverse"/>
+         <value name="usage" value="0.0"/>
+         <reference name="edge" value="18"/>
+      </element>
+      <element BuiltIn="false" container="nodes" id="17" name="AFDX Station 4" parent="0" temp="false" type="Station">
+         <value name="ATS" value="true"/>
+         <value name="CBS" value="true"/>
+         <value name="CQF" value="true"/>
+         <value name="Clock drift" value="10.0"/>
+         <value name="Clock drift min" value="10.0"/>
+         <value name="Clock granularity" value="10.0"/>
+         <value name="Clock jitter" value="2.0"/>
+         <value name="CustomImplementation" value=""/>
+         <value name="Elimination Policy" value="None"/>
+         <value name="FRER" value="true"/>
+         <value name="Global synchronous error (not used)" value="0.0"/>
+         <value name="Grand Master" value="false"/>
+         <value name="Grand Master weight" value="0"/>
+         <value name="Maximal Port Number" value="1"/>
+         <value name="Maximal synchronous error" value="Infinity"/>
+         <value name="Name" value="AFDX Station 4"/>
+         <value name="Replication Node" value="false"/>
+         <value name="Service Policy" value="Fixed Priority"/>
+         <value name="Supports Preemption" value="false"/>
+         <value name="Synchronous error" value="0.0"/>
+         <value name="TAS" value="true"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="__custom4" value=""/>
+         <value name="__custom5" value=""/>
+         <value name="avoidInRooting" value="false"/>
+         <value name="cluster" value=""/>
+         <value name="cluster family" value="None"/>
+         <value name="family" value=""/>
+         <value name="i" value="0"/>
+         <value name="j" value="0"/>
+         <value name="macAddress" value="FF-FF-FF-FF-FF-FF"/>
+         <value name="model" value=""/>
+         <value name="monitoringOnly" value="false"/>
+         <value name="nameRendering" value="FULL"/>
+         <value name="nodeRendering" value=""/>
+         <value name="subnet" value=""/>
+         <value name="weight" value="1"/>
+         <reference name="Elimination Target" value="[]"/>
+         <reference name="part" value="-1"/>
+         <reference containment="True" name="ports" value="[42]"/>
+         <reference name="scheduler" value="-1"/>
+         <stereo actionSelected="True" behavior="STNetImage" hideLocation="False" level="10" pageFromMe="False" showWeight="False">
+            <location name="Main">
+               <x>124.000000</x>
+               <y>250.000000</y>
+               <w>32.000000</w>
+               <h>32.000000</h>
+               <theta>NaN</theta>
+               <unit factor="1.0" power="1" resolution="NaN" siUnit="NONE"/>
+            </location>
+         </stereo>
+      </element>
+      <element BuiltIn="false" container="loads" id="2147483630" name="Load##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Load">
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="error" value="false"/>
+         <value name="load" value="9.0"/>
+         <value name="sense" value="Direct"/>
+         <value name="usage" value="8536.0"/>
+         <reference name="edge" value="19"/>
+      </element>
+      <element BuiltIn="false" container="edges" id="18" name="AFDX Station 1 =&gt; AFDX Switch 1" parent="0" temp="false" type="Edge">
+         <value name="CapacityLabel" value="100Mbps"/>
+         <value name="Label" value=""/>
+         <value name="LengthLabel" value=""/>
+         <value name="LoadLabel" value="9 % / 0 % "/>
+         <value name="Name" value="AFDX Station 1 =&gt; AFDX Switch 1"/>
+         <value name="Propagation delay" value="0.0"/>
+         <value name="Propagation delay type" value="Computed"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="User Label" value=""/>
+         <value name="avoidInRooting" value="false"/>
+         <value name="fromPort" value="#00"/>
+         <value name="length" value="0.0"/>
+         <value name="material" value="Fastest"/>
+         <value name="occurence" value="0"/>
+         <value name="occurenceMax" value="0"/>
+         <value name="rendering" value="DIRECT"/>
+         <value name="subnet" value=""/>
+         <value name="toPort" value="#00"/>
+         <reference name="from" value="14"/>
+         <reference name="part" value="-1"/>
+         <reference name="to" value="13"/>
+         <stereo actionSelected="True" behavior="STNetLink" hideLocation="False" level="0" pageFromMe="False" showWeight="False">
+            <location name="Main">
+               <x>0.000000</x>
+               <y>0.000000</y>
+               <w>0.000000</w>
+               <h>0.000000</h>
+               <theta>NaN</theta>
+               <unit factor="1.0" power="1" resolution="NaN" siUnit="NONE"/>
+            </location>
+         </stereo>
+      </element>
+      <element BuiltIn="false" container="loads" id="2147483629" name="Load##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Load">
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="error" value="false"/>
+         <value name="load" value="0.0"/>
+         <value name="sense" value="Reverse"/>
+         <value name="usage" value="0.0"/>
+         <reference name="edge" value="19"/>
+      </element>
+      <element BuiltIn="false" container="edges" id="19" name="AFDX Station 2 =&gt; AFDX Switch 1" parent="0" temp="false" type="Edge">
+         <value name="CapacityLabel" value="100Mbps"/>
+         <value name="Label" value=""/>
+         <value name="LengthLabel" value=""/>
+         <value name="LoadLabel" value="9 % / 0 % "/>
+         <value name="Name" value="AFDX Station 2 =&gt; AFDX Switch 1"/>
+         <value name="Propagation delay" value="0.0"/>
+         <value name="Propagation delay type" value="Computed"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="User Label" value=""/>
+         <value name="avoidInRooting" value="false"/>
+         <value name="fromPort" value="#00"/>
+         <value name="length" value="0.0"/>
+         <value name="material" value="Fastest"/>
+         <value name="occurence" value="0"/>
+         <value name="occurenceMax" value="0"/>
+         <value name="rendering" value="DIRECT"/>
+         <value name="subnet" value=""/>
+         <value name="toPort" value="#01"/>
+         <reference name="from" value="15"/>
+         <reference name="part" value="-1"/>
+         <reference name="to" value="13"/>
+         <stereo actionSelected="True" behavior="STNetLink" hideLocation="False" level="0" pageFromMe="False" showWeight="False">
+            <location name="Main">
+               <x>0.000000</x>
+               <y>0.000000</y>
+               <w>0.000000</w>
+               <h>0.000000</h>
+               <theta>NaN</theta>
+               <unit factor="1.0" power="1" resolution="NaN" siUnit="NONE"/>
+            </location>
+         </stereo>
+      </element>
+      <element BuiltIn="false" container="loads" id="2147483628" name="Load##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Load">
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="error" value="false"/>
+         <value name="load" value="35.0"/>
+         <value name="sense" value="Direct"/>
+         <value name="usage" value="34144.0"/>
+         <reference name="edge" value="20"/>
+      </element>
+      <element BuiltIn="false" container="edges" id="20" name="AFDX Switch 1 =&gt; AFDX Station 3" parent="0" temp="false" type="Edge">
+         <value name="CapacityLabel" value="100Mbps"/>
+         <value name="Label" value=""/>
+         <value name="LengthLabel" value=""/>
+         <value name="LoadLabel" value="35 % / 0 % "/>
+         <value name="Name" value="AFDX Switch 1 =&gt; AFDX Station 3"/>
+         <value name="Propagation delay" value="0.0"/>
+         <value name="Propagation delay type" value="Computed"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="User Label" value=""/>
+         <value name="avoidInRooting" value="false"/>
+         <value name="fromPort" value="#02"/>
+         <value name="length" value="0.0"/>
+         <value name="material" value="Fastest"/>
+         <value name="occurence" value="0"/>
+         <value name="occurenceMax" value="0"/>
+         <value name="rendering" value="DIRECT"/>
+         <value name="subnet" value=""/>
+         <value name="toPort" value="#00"/>
+         <reference name="from" value="13"/>
+         <reference name="part" value="-1"/>
+         <reference name="to" value="16"/>
+         <stereo actionSelected="True" behavior="STNetLink" hideLocation="False" level="0" pageFromMe="False" showWeight="False">
+            <location name="Main">
+               <x>172.000000</x>
+               <y>-34.000000</y>
+               <w>0.000000</w>
+               <h>0.000000</h>
+               <theta>NaN</theta>
+               <unit factor="1.0" power="1" resolution="NaN" siUnit="NONE"/>
+            </location>
+         </stereo>
+      </element>
+      <element BuiltIn="false" container="loads" id="2147483627" name="Load##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Load">
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="error" value="false"/>
+         <value name="load" value="0.0"/>
+         <value name="sense" value="Reverse"/>
+         <value name="usage" value="0.0"/>
+         <reference name="edge" value="20"/>
+      </element>
+      <element BuiltIn="false" container="edges" id="21" name="AFDX Station 4 =&gt; AFDX Switch 1" parent="0" temp="false" type="Edge">
+         <value name="CapacityLabel" value="100Mbps"/>
+         <value name="Label" value=""/>
+         <value name="LengthLabel" value=""/>
+         <value name="LoadLabel" value="9 % / 0 % "/>
+         <value name="Name" value="AFDX Station 4 =&gt; AFDX Switch 1"/>
+         <value name="Propagation delay" value="0.0"/>
+         <value name="Propagation delay type" value="Computed"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="User Label" value=""/>
+         <value name="avoidInRooting" value="false"/>
+         <value name="fromPort" value="#00"/>
+         <value name="length" value="0.0"/>
+         <value name="material" value="Fastest"/>
+         <value name="occurence" value="0"/>
+         <value name="occurenceMax" value="0"/>
+         <value name="rendering" value="DIRECT"/>
+         <value name="subnet" value=""/>
+         <value name="toPort" value="#03"/>
+         <reference name="from" value="17"/>
+         <reference name="part" value="-1"/>
+         <reference name="to" value="13"/>
+         <stereo actionSelected="True" behavior="STNetLink" hideLocation="False" level="0" pageFromMe="False" showWeight="False">
+            <location name="Main">
+               <x>0.000000</x>
+               <y>0.000000</y>
+               <w>0.000000</w>
+               <h>0.000000</h>
+               <theta>NaN</theta>
+               <unit factor="1.0" power="1" resolution="NaN" siUnit="NONE"/>
+            </location>
+         </stereo>
+      </element>
+      <element BuiltIn="false" container="loads" id="2147483626" name="Load##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Load">
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="error" value="false"/>
+         <value name="load" value="9.0"/>
+         <value name="sense" value="Direct"/>
+         <value name="usage" value="8536.0"/>
+         <reference name="edge" value="21"/>
+      </element>
+      <element BuiltIn="false" container="flows" id="22" name="AFDX Flow 1" parent="0" temp="false" type="Flow">
+         <value name="ATS" value="false"/>
+         <value name="CBS" value="false"/>
+         <value name="CQF" value="false"/>
+         <value name="FRER" value="false"/>
+         <value name="Name" value="AFDX Flow 1"/>
+         <value name="Protocol Overhead" value="0"/>
+         <value name="Shortest Path" value="Dijkstra"/>
+         <value name="TAS" value="false"/>
+         <value name="Throughput" value="8440.0"/>
+         <value name="__custom1" value=""/>
+         <value name="__custom2" value=""/>
+         <value name="__custom3" value=""/>
+         <value name="bestEffort" value="false"/>
+         <value name="broadcast" value="false"/>
+         <value name="burst (number of packets)" value="1"/>
+         <value name="deadline" value="1.0"/>
+         <value name="interframe" value="0.0"/>
+         <value name="interframe type" value="Minimal"/>
+         <value name="jitter" value="0.0"/>
+         <value name="jitterMax" value="Infinity"/>
+         <value name="offset" value="0"/>
+         <value name="offset type" value="Not Defined"/>
+         <value name="payloadMax" value="1000"/>
+         <value name="payloadMin" value="1000"/>
+         <value name="period" value="1.0"/>
+         <value name="periodic" value="true"/>
+         <value name="preemptive" value="false"/>
+         <value name="priority" value="0"/>
+         <value name="synchronization" value="false"/>
+         <value name="vlid" value="0"/>
+         <reference name="Protocol" value="-1"/>
+         <reference name="ServiceClass" value="-1"/>
+         <reference containment="True" name="casts" value="[]"/>
+         <reference name="elimNodes" value="[]"/>
+         <reference containment="True" name="parameters" value="[]"/>
+         <reference name="part" value="-1"/>
+         <reference name="relatedFlows" value="[]"/>
+         <reference name="replNodes" value="[]"/>
+         <reference name="source" value="14"/>
+         <reference containment="True" name="targets" value="[23]"/>
+      </element>
+      <element BuiltIn="false" container="loads" id="2147483625" name="Load##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Load">
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="error" value="false"/>
+         <value name="load" value="0.0"/>
+         <value name="sense" value="Reverse"/>
+         <value name="usage" value="0.0"/>
+         <reference name="edge" value="21"/>
+      </element>
+      <element BuiltIn="false" container="targets" id="23" name="Target#1" parent="22" temp="false" type="Target">
+         <value name="Replication" value="false"/>
+         <value name="Skip" value="false"/>
+         <value name="label" value=""/>
+         <value name="pathId" value="-1"/>
+         <value name="pathValue" value="0.0"/>
+         <value name="pending" value="false"/>
+         <value name="subnet" value=""/>
+         <reference name="eliminationPorts" value="[]"/>
+         <reference name="nodesNotUsed" value="[]"/>
+         <reference name="path" value="[18, 20]"/>
+         <reference name="ports" value="[]"/>
+         <reference name="replicationNodes" value="[]"/>
+         <reference name="target" value="16"/>
+         <stereo actionSelected="True" behavior="STTargetPath" hideLocation="False" level="100" pageFromMe="False" showWeight="False">
+            <location name="Main">
+               <x>0.000000</x>
+               <y>0.000000</y>
+               <w>0.000000</w>
+               <h>0.000000</h>
+               <theta>NaN</theta>
+               <unit factor="1.0" power="1" resolution="NaN" siUnit="NONE"/>
+            </location>
+         </stereo>
+      </element>
+      <element BuiltIn="false" container="loads" id="2147483624" name="Load##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Load">
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="error" value="false"/>
+         <value name="load" value="0.0"/>
+         <value name="sense" value="Direct"/>
+         <value name="usage" value="0.0"/>
+         <reference name="edge" value="61"/>
+      </element>
+      <element BuiltIn="false" container="flows" id="24" name="AFDX Flow 2" parent="0" temp="false" type="Flow">
+         <value name="ATS" value="false"/>
+         <value name="CBS" value="false"/>
+         <value name="CQF" value="false"/>
+         <value name="FRER" value="false"/>
+         <value name="Name" value="AFDX Flow 2"/>
+         <value name="Protocol Overhead" value="0"/>
+         <value name="Shortest Path" value="Dijkstra"/>
+         <value name="TAS" value="false"/>
+         <value name="Throughput" value="8440.0"/>
+         <value name="__custom1" value=""/>
+         <value name="__custom2" value=""/>
+         <value name="__custom3" value=""/>
+         <value name="bestEffort" value="false"/>
+         <value name="broadcast" value="false"/>
+         <value name="burst (number of packets)" value="1"/>
+         <value name="deadline" value="1.0"/>
+         <value name="interframe" value="0.0"/>
+         <value name="interframe type" value="Minimal"/>
+         <value name="jitter" value="0.0"/>
+         <value name="jitterMax" value="Infinity"/>
+         <value name="offset" value="0"/>
+         <value name="offset type" value="Not Defined"/>
+         <value name="payloadMax" value="1000"/>
+         <value name="payloadMin" value="1000"/>
+         <value name="period" value="1.0"/>
+         <value name="periodic" value="true"/>
+         <value name="preemptive" value="false"/>
+         <value name="priority" value="0"/>
+         <value name="synchronization" value="false"/>
+         <value name="vlid" value="0"/>
+         <reference name="Protocol" value="-1"/>
+         <reference name="ServiceClass" value="-1"/>
+         <reference containment="True" name="casts" value="[]"/>
+         <reference name="elimNodes" value="[]"/>
+         <reference containment="True" name="parameters" value="[]"/>
+         <reference name="part" value="-1"/>
+         <reference name="relatedFlows" value="[]"/>
+         <reference name="replNodes" value="[]"/>
+         <reference name="source" value="15"/>
+         <reference containment="True" name="targets" value="[25]"/>
+      </element>
+      <element BuiltIn="false" container="loads" id="2147483623" name="Load##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Load">
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="error" value="false"/>
+         <value name="load" value="9.0"/>
+         <value name="sense" value="Reverse"/>
+         <value name="usage" value="8536.0"/>
+         <reference name="edge" value="61"/>
+      </element>
+      <element BuiltIn="false" container="targets" id="25" name="Target#1" parent="24" temp="false" type="Target">
+         <value name="Replication" value="false"/>
+         <value name="Skip" value="false"/>
+         <value name="label" value=""/>
+         <value name="pathId" value="-1"/>
+         <value name="pathValue" value="0.0"/>
+         <value name="pending" value="false"/>
+         <value name="subnet" value=""/>
+         <reference name="eliminationPorts" value="[]"/>
+         <reference name="nodesNotUsed" value="[]"/>
+         <reference name="path" value="[19, 20]"/>
+         <reference name="ports" value="[]"/>
+         <reference name="replicationNodes" value="[]"/>
+         <reference name="target" value="16"/>
+         <stereo actionSelected="True" behavior="STTargetPath" hideLocation="False" level="100" pageFromMe="False" showWeight="False">
+            <location name="Main">
+               <x>0.000000</x>
+               <y>0.000000</y>
+               <w>0.000000</w>
+               <h>0.000000</h>
+               <theta>NaN</theta>
+               <unit factor="1.0" power="1" resolution="NaN" siUnit="NONE"/>
+            </location>
+         </stereo>
+      </element>
+      <element BuiltIn="false" container="loads" id="2147483622" name="Load##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Load">
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="error" value="false"/>
+         <value name="load" value="0.0"/>
+         <value name="sense" value="Direct"/>
+         <value name="usage" value="0.0"/>
+         <reference name="edge" value="64"/>
+      </element>
+      <element BuiltIn="false" container="flows" id="26" name="AFDX Flow 3" parent="0" temp="false" type="Flow">
+         <value name="ATS" value="false"/>
+         <value name="CBS" value="false"/>
+         <value name="CQF" value="false"/>
+         <value name="FRER" value="false"/>
+         <value name="Name" value="AFDX Flow 3"/>
+         <value name="Protocol Overhead" value="0"/>
+         <value name="Shortest Path" value="Dijkstra"/>
+         <value name="TAS" value="false"/>
+         <value name="Throughput" value="8440.0"/>
+         <value name="__custom1" value=""/>
+         <value name="__custom2" value=""/>
+         <value name="__custom3" value=""/>
+         <value name="bestEffort" value="false"/>
+         <value name="broadcast" value="false"/>
+         <value name="burst (number of packets)" value="1"/>
+         <value name="deadline" value="1.0"/>
+         <value name="interframe" value="0.0"/>
+         <value name="interframe type" value="Minimal"/>
+         <value name="jitter" value="0.0"/>
+         <value name="jitterMax" value="Infinity"/>
+         <value name="offset" value="0"/>
+         <value name="offset type" value="Not Defined"/>
+         <value name="payloadMax" value="1000"/>
+         <value name="payloadMin" value="1000"/>
+         <value name="period" value="1.0"/>
+         <value name="periodic" value="true"/>
+         <value name="preemptive" value="false"/>
+         <value name="priority" value="0"/>
+         <value name="synchronization" value="false"/>
+         <value name="vlid" value="0"/>
+         <reference name="Protocol" value="-1"/>
+         <reference name="ServiceClass" value="-1"/>
+         <reference containment="True" name="casts" value="[]"/>
+         <reference name="elimNodes" value="[]"/>
+         <reference containment="True" name="parameters" value="[]"/>
+         <reference name="part" value="-1"/>
+         <reference name="relatedFlows" value="[]"/>
+         <reference name="replNodes" value="[]"/>
+         <reference name="source" value="17"/>
+         <reference containment="True" name="targets" value="[27]"/>
+      </element>
+      <element BuiltIn="false" container="loads" id="2147483621" name="Load##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Load">
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="error" value="false"/>
+         <value name="load" value="9.0"/>
+         <value name="sense" value="Reverse"/>
+         <value name="usage" value="8536.0"/>
+         <reference name="edge" value="64"/>
+      </element>
+      <element BuiltIn="false" container="targets" id="27" name="Target#1" parent="26" temp="false" type="Target">
+         <value name="Replication" value="false"/>
+         <value name="Skip" value="false"/>
+         <value name="label" value=""/>
+         <value name="pathId" value="-1"/>
+         <value name="pathValue" value="0.0"/>
+         <value name="pending" value="false"/>
+         <value name="subnet" value=""/>
+         <reference name="eliminationPorts" value="[]"/>
+         <reference name="nodesNotUsed" value="[]"/>
+         <reference name="path" value="[21, 20]"/>
+         <reference name="ports" value="[]"/>
+         <reference name="replicationNodes" value="[]"/>
+         <reference name="target" value="16"/>
+         <stereo actionSelected="True" behavior="STTargetPath" hideLocation="False" level="100" pageFromMe="False" showWeight="False">
+            <location name="Main">
+               <x>0.000000</x>
+               <y>0.000000</y>
+               <w>0.000000</w>
+               <h>0.000000</h>
+               <theta>NaN</theta>
+               <unit factor="1.0" power="1" resolution="NaN" siUnit="NONE"/>
+            </location>
+         </stereo>
+      </element>
+      <element BuiltIn="false" container="delaysPerPort" id="2147483620" name="DelayPerPort##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="DelayPerPort">
+         <value name="delay" value="84.4"/>
+         <value name="outLink" value="AFDX Switch 1"/>
+         <value name="port" value="0"/>
+         <value name="priority" value="Best Effort"/>
+         <value name="sense" value="Mux"/>
+         <reference name="node" value="14"/>
+      </element>
+      <element BuiltIn="false" container="ports" id="28" name="#00" parent="13" temp="false" type="Port">
+         <value name="Name" value="#00"/>
+         <value name="Storage Policy" value="- inherited -"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <reference name="Edge" value="18"/>
+         <reference containment="True" name="atsSchedulers" value="[]"/>
+         <reference containment="True" name="scheduler" value="29"/>
+         <reference containment="True" name="slopes" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="delaysPerPort" id="2147483619" name="DelayPerPort##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="DelayPerPort">
+         <value name="delay" value="376.698011584"/>
+         <value name="outLink" value="AFDX Station 3"/>
+         <value name="port" value="2"/>
+         <value name="priority" value="Best Effort"/>
+         <value name="sense" value="Mux"/>
+         <reference name="node" value="13"/>
+      </element>
+      <element BuiltIn="false" container="scheduler" id="29" name="AFDX Switch 1#00" parent="28" temp="false" type="Scheduler">
+         <value name="Name" value="AFDX Switch 1#00"/>
+         <value name="adminGateStates" value="0"/>
+         <value name="configChange" value="false"/>
+         <value name="gateEnabled" value="true"/>
+         <value name="gclMaximalInterval" value="0"/>
+         <value name="gclMaximalLength" value="1"/>
+         <value name="porosity" value="0.0"/>
+         <reference containment="True" name="constraints" value="[]"/>
+         <reference containment="True" name="framePreemptionParameters" value="[]"/>
+         <reference containment="True" name="gateControlEntries" value="[]"/>
+         <reference containment="True" name="queueMaxSduEntries" value="[]"/>
+         <reference containment="True" name="windows" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="backlogs" id="2147483618" name="Backlog#1" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Backlog">
+         <value name="backlog" value="4709.0"/>
+         <value name="error" value="false"/>
+         <value name="memory" value="65536"/>
+         <value name="port" value="#02"/>
+         <value name="subnet" value=""/>
+         <reference name="Node" value="13"/>
+      </element>
+      <element BuiltIn="false" container="ports" id="30" name="#01" parent="13" temp="false" type="Port">
+         <value name="Name" value="#01"/>
+         <value name="Storage Policy" value="- inherited -"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <reference name="Edge" value="19"/>
+         <reference containment="True" name="atsSchedulers" value="[]"/>
+         <reference containment="True" name="scheduler" value="31"/>
+         <reference containment="True" name="slopes" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="delays" id="2147483617" name="E2Edelay#1" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="E2Edelay">
+         <value name="Information" value=""/>
+         <value name="deadline" value="1000.0000000000001"/>
+         <value name="delay" value="462.0"/>
+         <value name="delayMin" value="169.0"/>
+         <value name="error" value="false"/>
+         <value name="margin" value="53.80000000000001"/>
+         <value name="memberDelay" value="462.0"/>
+         <value name="subnet" value=""/>
+         <reference name="flow" value="22"/>
+         <reference name="target" value="23"/>
+      </element>
+      <element BuiltIn="false" container="scheduler" id="31" name="AFDX Switch 1#01" parent="30" temp="false" type="Scheduler">
+         <value name="Name" value="AFDX Switch 1#01"/>
+         <value name="adminGateStates" value="0"/>
+         <value name="configChange" value="false"/>
+         <value name="gateEnabled" value="true"/>
+         <value name="gclMaximalInterval" value="0"/>
+         <value name="gclMaximalLength" value="1"/>
+         <value name="porosity" value="0.0"/>
+         <reference containment="True" name="constraints" value="[]"/>
+         <reference containment="True" name="framePreemptionParameters" value="[]"/>
+         <reference containment="True" name="gateControlEntries" value="[]"/>
+         <reference containment="True" name="queueMaxSduEntries" value="[]"/>
+         <reference containment="True" name="windows" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="jitters" id="2147483616" name="Jitter#1" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Jitter">
+         <value name="error" value="false"/>
+         <value name="jitter" value="293.0"/>
+         <value name="margin" value="100.0"/>
+         <value name="subnet" value=""/>
+         <value name="tolerance" value="Infinity"/>
+         <reference name="flow" value="22"/>
+         <reference name="target" value="23"/>
+      </element>
+      <element BuiltIn="false" container="ports" id="32" name="#02" parent="13" temp="false" type="Port">
+         <value name="Name" value="#02"/>
+         <value name="Storage Policy" value="- inherited -"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <reference name="Edge" value="20"/>
+         <reference containment="True" name="atsSchedulers" value="[]"/>
+         <reference containment="True" name="scheduler" value="33"/>
+         <reference containment="True" name="slopes" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="delaysPerPort" id="2147483615" name="DelayPerPort##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="DelayPerPort">
+         <value name="delay" value="84.4"/>
+         <value name="outLink" value="AFDX Switch 1"/>
+         <value name="port" value="0"/>
+         <value name="priority" value="Best Effort"/>
+         <value name="sense" value="Mux"/>
+         <reference name="node" value="15"/>
+      </element>
+      <element BuiltIn="false" container="scheduler" id="33" name="AFDX Switch 1#02" parent="32" temp="false" type="Scheduler">
+         <value name="Name" value="AFDX Switch 1#02"/>
+         <value name="adminGateStates" value="0"/>
+         <value name="configChange" value="false"/>
+         <value name="gateEnabled" value="true"/>
+         <value name="gclMaximalInterval" value="0"/>
+         <value name="gclMaximalLength" value="1"/>
+         <value name="porosity" value="0.0"/>
+         <reference containment="True" name="constraints" value="[]"/>
+         <reference containment="True" name="framePreemptionParameters" value="[]"/>
+         <reference containment="True" name="gateControlEntries" value="[]"/>
+         <reference containment="True" name="queueMaxSduEntries" value="[]"/>
+         <reference containment="True" name="windows" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="delays" id="2147483614" name="E2Edelay#2" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="E2Edelay">
+         <value name="Information" value=""/>
+         <value name="deadline" value="1000.0000000000001"/>
+         <value name="delay" value="462.0"/>
+         <value name="delayMin" value="169.0"/>
+         <value name="error" value="false"/>
+         <value name="margin" value="53.80000000000001"/>
+         <value name="memberDelay" value="462.0"/>
+         <value name="subnet" value=""/>
+         <reference name="flow" value="24"/>
+         <reference name="target" value="25"/>
+      </element>
+      <element BuiltIn="false" container="ports" id="34" name="#03" parent="13" temp="false" type="Port">
+         <value name="Name" value="#03"/>
+         <value name="Storage Policy" value="- inherited -"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <reference name="Edge" value="21"/>
+         <reference containment="True" name="atsSchedulers" value="[]"/>
+         <reference containment="True" name="scheduler" value="35"/>
+         <reference containment="True" name="slopes" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="jitters" id="2147483613" name="Jitter#2" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Jitter">
+         <value name="error" value="false"/>
+         <value name="jitter" value="293.0"/>
+         <value name="margin" value="100.0"/>
+         <value name="subnet" value=""/>
+         <value name="tolerance" value="Infinity"/>
+         <reference name="flow" value="24"/>
+         <reference name="target" value="25"/>
+      </element>
+      <element BuiltIn="false" container="scheduler" id="35" name="AFDX Switch 1#03" parent="34" temp="false" type="Scheduler">
+         <value name="Name" value="AFDX Switch 1#03"/>
+         <value name="adminGateStates" value="0"/>
+         <value name="configChange" value="false"/>
+         <value name="gateEnabled" value="true"/>
+         <value name="gclMaximalInterval" value="0"/>
+         <value name="gclMaximalLength" value="1"/>
+         <value name="porosity" value="0.0"/>
+         <reference containment="True" name="constraints" value="[]"/>
+         <reference containment="True" name="framePreemptionParameters" value="[]"/>
+         <reference containment="True" name="gateControlEntries" value="[]"/>
+         <reference containment="True" name="queueMaxSduEntries" value="[]"/>
+         <reference containment="True" name="windows" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="delaysPerPort" id="2147483612" name="DelayPerPort##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="DelayPerPort">
+         <value name="delay" value="84.4"/>
+         <value name="outLink" value="AFDX Switch 1"/>
+         <value name="port" value="0"/>
+         <value name="priority" value="Best Effort"/>
+         <value name="sense" value="Mux"/>
+         <reference name="node" value="17"/>
+      </element>
+      <element BuiltIn="false" container="ports" id="36" name="#00" parent="14" temp="false" type="Port">
+         <value name="Name" value="#00"/>
+         <value name="Storage Policy" value="- inherited -"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <reference name="Edge" value="18"/>
+         <reference containment="True" name="atsSchedulers" value="[]"/>
+         <reference containment="True" name="scheduler" value="37"/>
+         <reference containment="True" name="slopes" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="delays" id="2147483611" name="E2Edelay#3" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="E2Edelay">
+         <value name="Information" value=""/>
+         <value name="deadline" value="1000.0000000000001"/>
+         <value name="delay" value="462.0"/>
+         <value name="delayMin" value="169.0"/>
+         <value name="error" value="false"/>
+         <value name="margin" value="53.80000000000001"/>
+         <value name="memberDelay" value="462.0"/>
+         <value name="subnet" value=""/>
+         <reference name="flow" value="26"/>
+         <reference name="target" value="27"/>
+      </element>
+      <element BuiltIn="false" container="scheduler" id="37" name="AFDX Station 1#00" parent="36" temp="false" type="Scheduler">
+         <value name="Name" value="AFDX Station 1#00"/>
+         <value name="adminGateStates" value="0"/>
+         <value name="configChange" value="false"/>
+         <value name="gateEnabled" value="true"/>
+         <value name="gclMaximalInterval" value="0"/>
+         <value name="gclMaximalLength" value="1"/>
+         <value name="porosity" value="0.0"/>
+         <reference containment="True" name="constraints" value="[]"/>
+         <reference containment="True" name="framePreemptionParameters" value="[]"/>
+         <reference containment="True" name="gateControlEntries" value="[]"/>
+         <reference containment="True" name="queueMaxSduEntries" value="[]"/>
+         <reference containment="True" name="windows" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="jitters" id="2147483610" name="Jitter#3" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Jitter">
+         <value name="error" value="false"/>
+         <value name="jitter" value="293.0"/>
+         <value name="margin" value="100.0"/>
+         <value name="subnet" value=""/>
+         <value name="tolerance" value="Infinity"/>
+         <reference name="flow" value="26"/>
+         <reference name="target" value="27"/>
+      </element>
+      <element BuiltIn="false" container="ports" id="38" name="#00" parent="15" temp="false" type="Port">
+         <value name="Name" value="#00"/>
+         <value name="Storage Policy" value="- inherited -"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <reference name="Edge" value="19"/>
+         <reference containment="True" name="atsSchedulers" value="[]"/>
+         <reference containment="True" name="scheduler" value="39"/>
+         <reference containment="True" name="slopes" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="delaysPerPort" id="2147483609" name="DelayPerPort##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="DelayPerPort">
+         <value name="delay" value="84.4"/>
+         <value name="outLink" value="AFDX Switch 2"/>
+         <value name="port" value="0"/>
+         <value name="priority" value="Best Effort"/>
+         <value name="sense" value="Mux"/>
+         <reference name="node" value="54"/>
+      </element>
+      <element BuiltIn="false" container="scheduler" id="39" name="AFDX Station 2#00" parent="38" temp="false" type="Scheduler">
+         <value name="Name" value="AFDX Station 2#00"/>
+         <value name="adminGateStates" value="0"/>
+         <value name="configChange" value="false"/>
+         <value name="gateEnabled" value="true"/>
+         <value name="gclMaximalInterval" value="0"/>
+         <value name="gclMaximalLength" value="1"/>
+         <value name="porosity" value="0.0"/>
+         <reference containment="True" name="constraints" value="[]"/>
+         <reference containment="True" name="framePreemptionParameters" value="[]"/>
+         <reference containment="True" name="gateControlEntries" value="[]"/>
+         <reference containment="True" name="queueMaxSduEntries" value="[]"/>
+         <reference containment="True" name="windows" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="delaysPerPort" id="2147483608" name="DelayPerPort##" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="DelayPerPort">
+         <value name="delay" value="91.52336"/>
+         <value name="outLink" value="AFDX Switch 1"/>
+         <value name="port" value="0"/>
+         <value name="priority" value="Best Effort"/>
+         <value name="sense" value="Mux"/>
+         <reference name="node" value="60"/>
+      </element>
+      <element BuiltIn="false" container="ports" id="40" name="#00" parent="16" temp="false" type="Port">
+         <value name="Name" value="#00"/>
+         <value name="Storage Policy" value="- inherited -"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <reference name="Edge" value="20"/>
+         <reference containment="True" name="atsSchedulers" value="[]"/>
+         <reference containment="True" name="scheduler" value="41"/>
+         <reference containment="True" name="slopes" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="backlogs" id="2147483607" name="Backlog#2" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Backlog">
+         <value name="backlog" value="1145.0"/>
+         <value name="error" value="false"/>
+         <value name="memory" value="65536"/>
+         <value name="port" value="#00"/>
+         <value name="subnet" value=""/>
+         <reference name="Node" value="60"/>
+      </element>
+      <element BuiltIn="false" container="scheduler" id="41" name="AFDX Station 3#00" parent="40" temp="false" type="Scheduler">
+         <value name="Name" value="AFDX Station 3#00"/>
+         <value name="adminGateStates" value="0"/>
+         <value name="configChange" value="false"/>
+         <value name="gateEnabled" value="true"/>
+         <value name="gclMaximalInterval" value="0"/>
+         <value name="gclMaximalLength" value="1"/>
+         <value name="porosity" value="0.0"/>
+         <reference containment="True" name="constraints" value="[]"/>
+         <reference containment="True" name="framePreemptionParameters" value="[]"/>
+         <reference containment="True" name="gateControlEntries" value="[]"/>
+         <reference containment="True" name="queueMaxSduEntries" value="[]"/>
+         <reference containment="True" name="windows" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="delays" id="2147483606" name="E2Edelay#4" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="E2Edelay">
+         <value name="Information" value=""/>
+         <value name="deadline" value="1000.0000000000001"/>
+         <value name="delay" value="553.0"/>
+         <value name="delayMin" value="254.0"/>
+         <value name="error" value="false"/>
+         <value name="margin" value="44.70000000000001"/>
+         <value name="memberDelay" value="553.0"/>
+         <value name="subnet" value=""/>
+         <reference name="flow" value="70"/>
+         <reference name="target" value="71"/>
+      </element>
+      <element BuiltIn="false" container="ports" id="42" name="#00" parent="17" temp="false" type="Port">
+         <value name="Name" value="#00"/>
+         <value name="Storage Policy" value="- inherited -"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <reference name="Edge" value="21"/>
+         <reference containment="True" name="atsSchedulers" value="[]"/>
+         <reference containment="True" name="scheduler" value="43"/>
+         <reference containment="True" name="slopes" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="jitters" id="2147483605" name="Jitter#4" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Jitter">
+         <value name="error" value="false"/>
+         <value name="jitter" value="300.0"/>
+         <value name="margin" value="100.0"/>
+         <value name="subnet" value=""/>
+         <value name="tolerance" value="Infinity"/>
+         <reference name="flow" value="70"/>
+         <reference name="target" value="71"/>
+      </element>
+      <element BuiltIn="false" container="scheduler" id="43" name="AFDX Station 4#00" parent="42" temp="false" type="Scheduler">
+         <value name="Name" value="AFDX Station 4#00"/>
+         <value name="adminGateStates" value="0"/>
+         <value name="configChange" value="false"/>
+         <value name="gateEnabled" value="true"/>
+         <value name="gclMaximalInterval" value="0"/>
+         <value name="gclMaximalLength" value="1"/>
+         <value name="porosity" value="0.0"/>
+         <reference containment="True" name="constraints" value="[]"/>
+         <reference containment="True" name="framePreemptionParameters" value="[]"/>
+         <reference containment="True" name="gateControlEntries" value="[]"/>
+         <reference containment="True" name="queueMaxSduEntries" value="[]"/>
+         <reference containment="True" name="windows" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="backlogs" id="2147483604" name="Backlog#3" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Backlog">
+         <value name="backlog" value="1145.0"/>
+         <value name="error" value="false"/>
+         <value name="memory" value="65536"/>
+         <value name="port" value="&lt;all&gt;"/>
+         <value name="subnet" value=""/>
+         <reference name="Node" value="60"/>
+      </element>
+      <element BuiltIn="true" container="protocols" id="44" name="TCP:IPv4" parent="0" temp="false" type="Protocol">
+         <value name="Name" value="TCP:IPv4"/>
+         <value name="description" value="The TCP protocol over IP v4"/>
+         <value name="overhead" value="40"/>
+         <value name="supportsFragmentation" value="false"/>
+      </element>
+      <element BuiltIn="false" container="backlogs" id="2147483603" name="Backlog#4" parent="2147483639" temp="true" tempTag="MAIN_RESULT" type="Backlog">
+         <value name="backlog" value="4709.0"/>
+         <value name="error" value="false"/>
+         <value name="memory" value="65536"/>
+         <value name="port" value="&lt;all&gt;"/>
+         <value name="subnet" value=""/>
+         <reference name="Node" value="13"/>
+      </element>
+      <element BuiltIn="true" container="protocols" id="45" name="UDP:IPv4" parent="0" temp="false" type="Protocol">
+         <value name="Name" value="UDP:IPv4"/>
+         <value name="description" value="The UDP protocol over IP v4"/>
+         <value name="overhead" value="28"/>
+         <value name="supportsFragmentation" value="false"/>
+      </element>
+      <element BuiltIn="true" container="protocols" id="46" name="TCP:IPv6" parent="0" temp="false" type="Protocol">
+         <value name="Name" value="TCP:IPv6"/>
+         <value name="description" value="The TCP protocol over IP v6"/>
+         <value name="overhead" value="60"/>
+         <value name="supportsFragmentation" value="false"/>
+      </element>
+      <element BuiltIn="true" container="protocols" id="47" name="UDP:IPv6" parent="0" temp="false" type="Protocol">
+         <value name="Name" value="UDP:IPv6"/>
+         <value name="description" value="The UDP protocol over IP v6"/>
+         <value name="overhead" value="48"/>
+         <value name="supportsFragmentation" value="false"/>
+      </element>
+      <element BuiltIn="true" container="protocols" id="48" name="SOME/IP" parent="0" temp="false" type="Protocol">
+         <value name="Name" value="SOME/IP"/>
+         <value name="description" value="The SOME/IP protocol (AUTOSAR)"/>
+         <value name="overhead" value="-1"/>
+         <value name="supportsFragmentation" value="true"/>
+      </element>
+      <element BuiltIn="true" container="protocols" id="49" name="TFTP Windowsize" parent="0" temp="false" type="Protocol">
+         <value name="Name" value="TFTP Windowsize"/>
+         <value name="description" value="The TFTP protocol (RFC 7440)"/>
+         <value name="overhead" value="-1"/>
+         <value name="supportsFragmentation" value="true"/>
+      </element>
+      <element BuiltIn="true" container="protocols" id="50" name="AVTP Audio" parent="0" temp="false" type="Protocol">
+         <value name="Name" value="AVTP Audio"/>
+         <value name="description" value="The AVTP protocol for Audio Streams"/>
+         <value name="overhead" value="-1"/>
+         <value name="supportsFragmentation" value="true"/>
+      </element>
+      <element BuiltIn="true" container="protocols" id="51" name="AVTP Video" parent="0" temp="false" type="Protocol">
+         <value name="Name" value="AVTP Video"/>
+         <value name="description" value="The AVTP protocol for Video Streams"/>
+         <value name="overhead" value="-1"/>
+         <value name="supportsFragmentation" value="true"/>
+      </element>
+      <element BuiltIn="true" container="protocols" id="52" name="RTP" parent="0" temp="false" type="Protocol">
+         <value name="Name" value="RTP"/>
+         <value name="description" value="The RTP protocol for Video Streams"/>
+         <value name="overhead" value="-1"/>
+         <value name="supportsFragmentation" value="true"/>
+      </element>
+      <element BuiltIn="false" container="nodes" id="54" name="AFDX Station 5" parent="0" temp="false" type="Station">
+         <value name="ATS" value="true"/>
+         <value name="CBS" value="true"/>
+         <value name="CQF" value="true"/>
+         <value name="Clock drift" value="10.0"/>
+         <value name="Clock drift min" value="10.0"/>
+         <value name="Clock granularity" value="10.0"/>
+         <value name="Clock jitter" value="2.0"/>
+         <value name="CustomImplementation" value=""/>
+         <value name="Elimination Policy" value="None"/>
+         <value name="FRER" value="true"/>
+         <value name="Global synchronous error (not used)" value="0.0"/>
+         <value name="Grand Master" value="false"/>
+         <value name="Grand Master weight" value="0"/>
+         <value name="Maximal Port Number" value="1"/>
+         <value name="Maximal synchronous error" value="Infinity"/>
+         <value name="Name" value="AFDX Station 5"/>
+         <value name="Replication Node" value="false"/>
+         <value name="Service Policy" value="Fixed Priority"/>
+         <value name="Supports Preemption" value="false"/>
+         <value name="Synchronous error" value="0.0"/>
+         <value name="TAS" value="true"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="__custom4" value=""/>
+         <value name="__custom5" value=""/>
+         <value name="avoidInRooting" value="false"/>
+         <value name="cluster" value=""/>
+         <value name="cluster family" value="None"/>
+         <value name="family" value=""/>
+         <value name="i" value="0"/>
+         <value name="j" value="0"/>
+         <value name="macAddress" value="FF-FF-FF-FF-FF-FF"/>
+         <value name="model" value=""/>
+         <value name="monitoringOnly" value="false"/>
+         <value name="nameRendering" value="FULL"/>
+         <value name="nodeRendering" value=""/>
+         <value name="subnet" value=""/>
+         <value name="weight" value="1"/>
+         <reference name="Elimination Target" value="[]"/>
+         <reference name="part" value="-1"/>
+         <reference containment="True" name="ports" value="[65]"/>
+         <reference name="scheduler" value="-1"/>
+         <stereo actionSelected="True" behavior="STNetImage" hideLocation="False" level="10" pageFromMe="False" showWeight="False">
+            <location name="Main">
+               <x>626.000000</x>
+               <y>40.000000</y>
+               <w>32.000000</w>
+               <h>32.000000</h>
+               <theta>NaN</theta>
+               <unit factor="1.0" power="1" resolution="NaN" siUnit="NONE"/>
+            </location>
+         </stereo>
+      </element>
+      <element BuiltIn="false" container="ports" id="56" name="#04" parent="13" temp="false" type="Port">
+         <value name="Name" value="#04"/>
+         <value name="Storage Policy" value="- inherited -"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <reference name="Edge" value="61"/>
+         <reference containment="True" name="atsSchedulers" value="[]"/>
+         <reference containment="True" name="scheduler" value="57"/>
+         <reference containment="True" name="slopes" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="scheduler" id="57" name="AFDX Switch 1#04" parent="56" temp="false" type="Scheduler">
+         <value name="Name" value="AFDX Switch 1#04"/>
+         <value name="adminGateStates" value="0"/>
+         <value name="configChange" value="false"/>
+         <value name="gateEnabled" value="true"/>
+         <value name="gclMaximalInterval" value="0"/>
+         <value name="gclMaximalLength" value="1"/>
+         <value name="porosity" value="0.0"/>
+         <reference containment="True" name="constraints" value="[]"/>
+         <reference containment="True" name="framePreemptionParameters" value="[]"/>
+         <reference containment="True" name="gateControlEntries" value="[]"/>
+         <reference containment="True" name="queueMaxSduEntries" value="[]"/>
+         <reference containment="True" name="windows" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="nodes" id="60" name="AFDX Switch 2" parent="0" temp="false" type="Switch">
+         <value name="ATS" value="true"/>
+         <value name="CBS" value="true"/>
+         <value name="CQF" value="true"/>
+         <value name="Clock drift" value="10.0"/>
+         <value name="Clock drift min" value="10.0"/>
+         <value name="Clock granularity" value="10.0"/>
+         <value name="Clock jitter" value="2.0"/>
+         <value name="CustomImplementation" value=""/>
+         <value name="Elimination Policy" value="None"/>
+         <value name="FRER" value="true"/>
+         <value name="Global synchronous error (not used)" value="0.0"/>
+         <value name="Grand Master" value="false"/>
+         <value name="Grand Master weight" value="0"/>
+         <value name="Implementation family" value=""/>
+         <value name="Maximal Port Number" value="32"/>
+         <value name="Maximal synchronous error" value="Infinity"/>
+         <value name="Memory" value="65536"/>
+         <value name="Memory Management Policy" value="Shared memory"/>
+         <value name="Name" value="AFDX Switch 2"/>
+         <value name="Queues number per port" value="8"/>
+         <value name="Replication Node" value="false"/>
+         <value name="Service Policy" value="Fixed Priority"/>
+         <value name="Storage Policy" value="Cut Through"/>
+         <value name="Supports Preemption" value="false"/>
+         <value name="Synchronous error" value="0.0"/>
+         <value name="TAS" value="true"/>
+         <value name="Tech Latency Max" value="0.0"/>
+         <value name="Tech Latency Min" value="0.0"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="__custom4" value=""/>
+         <value name="__custom5" value=""/>
+         <value name="avoidInRooting" value="false"/>
+         <value name="cluster" value=""/>
+         <value name="cluster family" value="None"/>
+         <value name="family" value=""/>
+         <value name="i" value="0"/>
+         <value name="j" value="0"/>
+         <value name="macAddress" value="FF-FF-FF-FF-FF-FF"/>
+         <value name="model" value=""/>
+         <value name="monitoringOnly" value="false"/>
+         <value name="nameRendering" value="FULL"/>
+         <value name="nodeRendering" value=""/>
+         <value name="subnet" value=""/>
+         <value name="weight" value="1"/>
+         <reference name="Elimination Target" value="[]"/>
+         <reference name="part" value="-1"/>
+         <reference containment="True" name="ports" value="[62, 67]"/>
+         <reference name="scheduler" value="-1"/>
+         <stereo actionSelected="True" behavior="STNetImage" hideLocation="False" level="20" pageFromMe="False" showWeight="False">
+            <location name="Main">
+               <x>476.000000</x>
+               <y>110.000000</y>
+               <w>32.000000</w>
+               <h>32.000000</h>
+               <theta>NaN</theta>
+               <unit factor="1.0" power="1" resolution="NaN" siUnit="NONE"/>
+            </location>
+         </stereo>
+      </element>
+      <element BuiltIn="false" container="edges" id="61" name="AFDX Switch 1 =&gt; AFDX Switch 2" parent="0" temp="false" type="Edge">
+         <value name="CapacityLabel" value="100Mbps"/>
+         <value name="Label" value=""/>
+         <value name="LengthLabel" value=""/>
+         <value name="LoadLabel" value="0 % / 9 % "/>
+         <value name="Name" value="AFDX Switch 1 =&gt; AFDX Switch 2"/>
+         <value name="Propagation delay" value="0.0"/>
+         <value name="Propagation delay type" value="Computed"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="User Label" value=""/>
+         <value name="avoidInRooting" value="false"/>
+         <value name="fromPort" value="#04"/>
+         <value name="length" value="0.0"/>
+         <value name="material" value="Fastest"/>
+         <value name="occurence" value="0"/>
+         <value name="occurenceMax" value="0"/>
+         <value name="rendering" value="DIRECT"/>
+         <value name="subnet" value=""/>
+         <value name="toPort" value="#00"/>
+         <reference name="from" value="13"/>
+         <reference name="part" value="-1"/>
+         <reference name="to" value="60"/>
+         <stereo actionSelected="True" behavior="STNetLink" hideLocation="False" level="0" pageFromMe="False" showWeight="False">
+            <location name="Main">
+               <x>0.000000</x>
+               <y>0.000000</y>
+               <w>0.000000</w>
+               <h>0.000000</h>
+               <theta>NaN</theta>
+               <unit factor="1.0" power="1" resolution="NaN" siUnit="NONE"/>
+            </location>
+         </stereo>
+      </element>
+      <element BuiltIn="false" container="ports" id="62" name="#00" parent="60" temp="false" type="Port">
+         <value name="Name" value="#00"/>
+         <value name="Storage Policy" value="- inherited -"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <reference name="Edge" value="61"/>
+         <reference containment="True" name="atsSchedulers" value="[]"/>
+         <reference containment="True" name="scheduler" value="63"/>
+         <reference containment="True" name="slopes" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="scheduler" id="63" name="AFDX Switch 2#00" parent="62" temp="false" type="Scheduler">
+         <value name="Name" value="AFDX Switch 2#00"/>
+         <value name="adminGateStates" value="0"/>
+         <value name="configChange" value="false"/>
+         <value name="gateEnabled" value="true"/>
+         <value name="gclMaximalInterval" value="0"/>
+         <value name="gclMaximalLength" value="1"/>
+         <value name="porosity" value="0.0"/>
+         <reference containment="True" name="constraints" value="[]"/>
+         <reference containment="True" name="framePreemptionParameters" value="[]"/>
+         <reference containment="True" name="gateControlEntries" value="[]"/>
+         <reference containment="True" name="queueMaxSduEntries" value="[]"/>
+         <reference containment="True" name="windows" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="edges" id="64" name="AFDX Switch 2 =&gt; AFDX Station 5" parent="0" temp="false" type="Edge">
+         <value name="CapacityLabel" value="100Mbps"/>
+         <value name="Label" value=""/>
+         <value name="LengthLabel" value=""/>
+         <value name="LoadLabel" value="0 % / 9 % "/>
+         <value name="Name" value="AFDX Switch 2 =&gt; AFDX Station 5"/>
+         <value name="Propagation delay" value="0.0"/>
+         <value name="Propagation delay type" value="Computed"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <value name="User Label" value=""/>
+         <value name="avoidInRooting" value="false"/>
+         <value name="fromPort" value="#01"/>
+         <value name="length" value="0.0"/>
+         <value name="material" value="Fastest"/>
+         <value name="occurence" value="0"/>
+         <value name="occurenceMax" value="0"/>
+         <value name="rendering" value="DIRECT"/>
+         <value name="subnet" value=""/>
+         <value name="toPort" value="#00"/>
+         <reference name="from" value="60"/>
+         <reference name="part" value="-1"/>
+         <reference name="to" value="54"/>
+         <stereo actionSelected="True" behavior="STNetLink" hideLocation="False" level="0" pageFromMe="False" showWeight="False">
+            <location name="Main">
+               <x>0.000000</x>
+               <y>0.000000</y>
+               <w>0.000000</w>
+               <h>0.000000</h>
+               <theta>NaN</theta>
+               <unit factor="1.0" power="1" resolution="NaN" siUnit="NONE"/>
+            </location>
+         </stereo>
+      </element>
+      <element BuiltIn="false" container="ports" id="65" name="#00" parent="54" temp="false" type="Port">
+         <value name="Name" value="#00"/>
+         <value name="Storage Policy" value="- inherited -"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <reference name="Edge" value="64"/>
+         <reference containment="True" name="atsSchedulers" value="[]"/>
+         <reference containment="True" name="scheduler" value="66"/>
+         <reference containment="True" name="slopes" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="scheduler" id="66" name="AFDX Station 5#00" parent="65" temp="false" type="Scheduler">
+         <value name="Name" value="AFDX Station 5#00"/>
+         <value name="adminGateStates" value="0"/>
+         <value name="configChange" value="false"/>
+         <value name="gateEnabled" value="true"/>
+         <value name="gclMaximalInterval" value="0"/>
+         <value name="gclMaximalLength" value="1"/>
+         <value name="porosity" value="0.0"/>
+         <reference containment="True" name="constraints" value="[]"/>
+         <reference containment="True" name="framePreemptionParameters" value="[]"/>
+         <reference containment="True" name="gateControlEntries" value="[]"/>
+         <reference containment="True" name="queueMaxSduEntries" value="[]"/>
+         <reference containment="True" name="windows" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="ports" id="67" name="#01" parent="60" temp="false" type="Port">
+         <value name="Name" value="#01"/>
+         <value name="Storage Policy" value="- inherited -"/>
+         <value name="Transmission Capacity" value="100.0"/>
+         <reference name="Edge" value="64"/>
+         <reference containment="True" name="atsSchedulers" value="[]"/>
+         <reference containment="True" name="scheduler" value="68"/>
+         <reference containment="True" name="slopes" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="scheduler" id="68" name="AFDX Switch 2#01" parent="67" temp="false" type="Scheduler">
+         <value name="Name" value="AFDX Switch 2#01"/>
+         <value name="adminGateStates" value="0"/>
+         <value name="configChange" value="false"/>
+         <value name="gateEnabled" value="true"/>
+         <value name="gclMaximalInterval" value="0"/>
+         <value name="gclMaximalLength" value="1"/>
+         <value name="porosity" value="0.0"/>
+         <reference containment="True" name="constraints" value="[]"/>
+         <reference containment="True" name="framePreemptionParameters" value="[]"/>
+         <reference containment="True" name="gateControlEntries" value="[]"/>
+         <reference containment="True" name="queueMaxSduEntries" value="[]"/>
+         <reference containment="True" name="windows" value="[]"/>
+      </element>
+      <element BuiltIn="false" container="flows" id="70" name="AFDX Flow 4" parent="0" temp="false" type="Flow">
+         <value name="ATS" value="false"/>
+         <value name="CBS" value="false"/>
+         <value name="CQF" value="false"/>
+         <value name="FRER" value="false"/>
+         <value name="Name" value="AFDX Flow 4"/>
+         <value name="Protocol Overhead" value="0"/>
+         <value name="Shortest Path" value="Dijkstra"/>
+         <value name="TAS" value="false"/>
+         <value name="Throughput" value="8440.0"/>
+         <value name="__custom1" value=""/>
+         <value name="__custom2" value=""/>
+         <value name="__custom3" value=""/>
+         <value name="bestEffort" value="false"/>
+         <value name="broadcast" value="false"/>
+         <value name="burst (number of packets)" value="1"/>
+         <value name="deadline" value="1.0"/>
+         <value name="interframe" value="0.0"/>
+         <value name="interframe type" value="Minimal"/>
+         <value name="jitter" value="0.0"/>
+         <value name="jitterMax" value="Infinity"/>
+         <value name="offset" value="0"/>
+         <value name="offset type" value="Not Defined"/>
+         <value name="payloadMax" value="1000"/>
+         <value name="payloadMin" value="1000"/>
+         <value name="period" value="1.0"/>
+         <value name="periodic" value="true"/>
+         <value name="preemptive" value="false"/>
+         <value name="priority" value="0"/>
+         <value name="synchronization" value="false"/>
+         <value name="vlid" value="0"/>
+         <reference name="Protocol" value="-1"/>
+         <reference name="ServiceClass" value="-1"/>
+         <reference containment="True" name="casts" value="[]"/>
+         <reference name="elimNodes" value="[]"/>
+         <reference containment="True" name="parameters" value="[]"/>
+         <reference name="part" value="-1"/>
+         <reference name="relatedFlows" value="[]"/>
+         <reference name="replNodes" value="[]"/>
+         <reference name="source" value="54"/>
+         <reference containment="True" name="targets" value="[71]"/>
+      </element>
+      <element BuiltIn="false" container="targets" id="71" name="Target#1" parent="70" temp="false" type="Target">
+         <value name="Replication" value="false"/>
+         <value name="Skip" value="false"/>
+         <value name="label" value=""/>
+         <value name="pathId" value="-1"/>
+         <value name="pathValue" value="0.0"/>
+         <value name="pending" value="false"/>
+         <value name="subnet" value=""/>
+         <reference name="eliminationPorts" value="[]"/>
+         <reference name="nodesNotUsed" value="[]"/>
+         <reference name="path" value="[64, 61, 20]"/>
+         <reference name="ports" value="[]"/>
+         <reference name="replicationNodes" value="[]"/>
+         <reference name="target" value="16"/>
+         <stereo actionSelected="True" behavior="STTargetPath" hideLocation="False" level="100" pageFromMe="False" showWeight="False">
+            <location name="Main">
+               <x>0.000000</x>
+               <y>0.000000</y>
+               <w>0.000000</w>
+               <h>0.000000</h>
+               <theta>NaN</theta>
+               <unit factor="1.0" power="1" resolution="NaN" siUnit="NONE"/>
+            </location>
+         </stereo>
+      </element>
+   </elements>
+</open_timaeus_net>
