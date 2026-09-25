@@ -524,6 +524,4 @@ GitHub: [@msk10029](https://github.com/msk10029)
 
 ## License
 
-No license is currently specified in this repository.
-
-If this project is intended for public reuse, adding an explicit open-source license is recommended.
+This repository is provided for viewing purposes only. Copying, modifying, redistributing, or using this code for commercial purposes is not permitted without prior written permission from the author.
