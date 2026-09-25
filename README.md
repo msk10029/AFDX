@@ -310,7 +310,7 @@ cd AFDX
 Run the main implementation:
 
 ```bash
-python src/Mohsin_Khan.py
+python src/afdx_analyzer.py
 ```
 
 The current implementation loads:
